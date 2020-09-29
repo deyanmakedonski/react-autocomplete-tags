@@ -32,6 +32,7 @@ export default class Autocomplete extends Component {
     ]),
     limitTags: PropTypes.number,
     delay: PropTypes.number,
+    maxWidth: PropTypes.number,
     allowCreateTag: PropTypes.bool,
     loader: PropTypes.bool,
     customLoader: PropTypes.node,
@@ -169,6 +170,8 @@ export default class Autocomplete extends Component {
               suggestions={suggestions}
               onClick={this.onClickSuggestion}
               focused={focusedSuggestion}
+              inputRef={this.input}
+              maxWidth={this.props.maxWidth}
             />
           </div>
           {loader && loaderPosition === "bottom" && customLoader}

@@ -1,12 +1,12 @@
-.root{
+.root {
   position: relative;
   padding: 0.5em;
-  border: 0.1em solid #E0E0E0;
+  border: 0.1em solid #e0e0e0;
   cursor: text;
   font-size: 10px;
 }
 
-.content{
+.content {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -14,14 +14,14 @@
   padding: 0.5em;
 }
 
-.inputContainer{
+.inputContainer {
   width: auto;
-  margin: .4em;
+  padding: 4px;
   flex: 1;
   min-width: 12%;
 }
 
-.inputContainer input{
+.inputContainer input {
   width: 100%;
   border: 0;
   padding: 0 !important;
@@ -33,12 +33,12 @@
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-.inputHidden{
+.inputHidden {
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.inputHidden input{
+.inputHidden input {
   display: none;
 }
