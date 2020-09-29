@@ -45,7 +45,6 @@ export default class Suggestions extends PureComponent {
 
   componentDidUpdate(prevProps) {
     if (prevProps.suggestions !== this.props.suggestions) {
-      console.log(this.props.inputRef.offsetLeft);
       let newLeft = this.props.inputRef.getBoundingClientRect().left;
       this.setLeft(this.props.inputRef.offsetLeft - 4);
     }
@@ -69,7 +68,6 @@ export default class Suggestions extends PureComponent {
 
     //Loader?
     if (!suggestions || !suggestions.length) return null;
-    console.log(this.state);
     return (
       <div
         className={`${styles.dropdown} ${className}`}
